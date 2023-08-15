@@ -4,6 +4,9 @@
 ## **LICENSE**
 This **repo** use the [MIT](https://choosealicense.com/licenses/mit/) license, you could do mostly anything with [it](https://github.com/Geming400/progressBar).
 
+## Some definitions
+`cls`: **CL**ear **S**creen
+
 ## How to use it:
 ### class arguments
 When first opening the file, you can see this:
@@ -35,7 +38,7 @@ The code for this would be:
 ```py
 import progressBar  # importing the module
 
-bar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
+Pbar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
 ```
 > *If you don't understand what `bars_max` and `symbols` mean, check [this](https://github.com/Geming400/progressBar/blob/main/README.md#how-to-use-it).*
 
@@ -45,8 +48,8 @@ Once you have your object, *(in this case, `bar`)* you just execute that piece o
 ```py
 import progressBar  # importing the module
 
-bar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
-bar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to False to prevent the printing. (by default True)
+Pbar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
+Pbar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to False to prevent the printing. (by default True)
 ```
 
 ### adding a value to the object
@@ -69,13 +72,25 @@ Here is an example:
 from time import sleep  # importing the modules
 import progressBar
 
-bar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
-bar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to False to prevent the printing. (by default True)
+Pbar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
+Pbar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to False to prevent the printing. (by default True)
 
 sleep(1) # wating 1 second, but replace this with your script
 
-bar.add_and_render(to_add=10, cls=True) # add 10 the the progress bar and then render it
+Pbar.add_and_render(to_add=10, cls=True) # add 10 (out of max_value (default: 100)) the the progress bar and then render it
 ```
 
 ### Advanced use
 You can set use some variables to track the current progression of the `progress bar`
+
+## What is currently supported
+*Current version: **1.0.0***
+
+| Version | Feature                             | Supported          |
+| ------- | ----------------------------------- |------------------- |
+| 1.0.0   | to change the max value             | :white_check_mark: |
+| *?.?.?* | to change the min value             | :x:                |
+| 1.0.0   | to set a new value                  | :white_check_mark: |
+| 1.0.0   | to add a value                      | :white_check_mark: |
+| 1.0.0   | to render the progress bar          | :white_check_mark: |
+| 1.0.0   | to render the progress bar          | :white_check_mark: |
