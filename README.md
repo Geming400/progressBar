@@ -1,8 +1,8 @@
 # progress Bar
-`progressBar` is an easy to use progress bar script in python!
+`progressBar` is an open-source python module to help you making progress bar easily!
 
 ## **LICENSE**
-This **repo** use the [mit](https://choosealicense.com/licenses/mit/) license, you could do mostly anything with [it](https://github.com/Geming400/progressBar).
+This **repo** use the [MIT](https://choosealicense.com/licenses/mit/) license, you could do mostly anything with [it](https://github.com/Geming400/progressBar).
 
 ## How to use it:
 ### class arguments
