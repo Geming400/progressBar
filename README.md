@@ -48,3 +48,18 @@ import progressBar  # importing the module
 bar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
 bar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to False to prevent the printing. (by default True)
 ```
+
+### adding a value to the object
+A **progress bar** needs to move! Imagine the life of it without moving... `*emotional story :(*`\
+There is 3 fonction to do it:
+```py
+add(to_add=10, cls=True)
+```
+
+```py
+set_value(to_set=50, cls=True)
+```
+
+```py
+add_and_render(to_add=10, cls=True)
+```
