@@ -86,11 +86,15 @@ You can set use some variables to track the current progression of the `progress
 ## What is currently supported
 *Current version: **1.0.0***
 
-| Version | Feature                             | Supported          |
-| ------- | ----------------------------------- |------------------- |
-| 1.0.0   | to change the max value             | :white_check_mark: |
-| *?.?.?* | to change the min value             | :x:                |
-| 1.0.0   | to set a new value                  | :white_check_mark: |
-| 1.0.0   | to add a value                      | :white_check_mark: |
-| 1.0.0   | to render the progress bar          | :white_check_mark: |
-| 1.0.0   | to render the progress bar          | :white_check_mark: |
+| Version | Feature                                                    | Supported          |
+| ------- | ---------------------------------------------------------- |------------------- |
+| 1.0.0   | to change the max value                                    | :white_check_mark: |
+| 1.0.0   | to set a new value                                         | :white_check_mark: |
+| 1.0.0   | to add a value                                             | :white_check_mark: |
+| 1.0.0   | to render the progress bar                                 | :white_check_mark: |
+| 1.0.0   | to change the look of the progress bar                     | :white_check_mark: |
+| 1.0.0   | to add an upper text when rendering                        | :white_check_mark: |
+| *?.?.?* | to change the min value                                    | :x:                 |
+| *?.?.?* | to change the number of character displayed when rendering | :x:                 |
+| *?.?.?* | to add a prefix when rendering                             | :x:                 |
+| *?.?.?* | to add a suffix when rendering                             | :x:                 |
