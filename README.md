@@ -18,6 +18,7 @@ text: The text that will be rendered above the progress bar
 '''
 ```
 
+### starting off
 This is the help about the progress bar arguments.\
 **next**, you need to import and create an object.
 ```py
@@ -36,4 +37,14 @@ import progressBar  # importing the module
 
 bar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
 ```
-If you don't understand what `bars_max` and `symbols` mean, check [this](https://github.com/Geming400/progressBar/blob/main/README.md#how-to-use-it).
+> *If you don't understand what `bars_max` and `symbols` mean, check [this](https://github.com/Geming400/progressBar/blob/main/README.md#how-to-use-it).*
+
+### render
+**Rendering** is as simple as executing a function!\
+Once you have your object, *(in this case, `bar`)* you just execute that piece of code:
+```py
+import progressBar  # importing the module
+
+bar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
+bar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to False to prevent the printing. (by default True)
+```
