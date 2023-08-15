@@ -36,4 +36,4 @@ import progressBar  # importing the module
 
 bar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
 ```
-If you don't understand what `bars_max` and `symbols` mean, check [this](class arguments).
+If you don't understand what `bars_max` and `symbols` mean, check [this](https://github.com/Geming400/progressBar/blob/main/README.md#how-to-use-it).
