@@ -52,7 +52,7 @@ class progress_bar():
                     #print(str(self.current) + '\n' + self.renderResult)
 
 
-    # INT = THE NUMBER THAT WILL BE SET/ADD.
+
     def add(self, to_add=10, cls=True): # Let you add a value to the current value of the progress bar
         self.current += to_add
         if cls:clear_screen()
