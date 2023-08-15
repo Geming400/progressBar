@@ -9,7 +9,7 @@ text: The text that will be rendered above the progress bar
 
 # Creating a function that clear the screen (cls)
 def clear_screen():
-    print("\n" * 1000) # Doing this because of mac 
+    print("\n" * 300) # Doing this because of mac 
 
 # Creating the class
 class progress_bar():
