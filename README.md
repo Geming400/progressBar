@@ -50,7 +50,7 @@ bar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to
 ```
 
 ### adding a value to the object
-A **progress bar** needs to move! Imagine the life of it without moving... `*emotional story :(*`\
+A **progress bar** needs to move! Imagine the life of it without moving... `emotional story, I know :(`\
 There is 3 fonction to do it:
 ```py
 add(to_add=10, cls=True)
