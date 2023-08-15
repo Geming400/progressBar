@@ -63,3 +63,19 @@ set_value(to_set=50, cls=True)
 ```py
 add_and_render(to_add=10, cls=True)
 ```
+
+Here is an example:
+```py
+from time import sleep
+import progressBar  # importing the module
+
+bar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
+bar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to False to prevent the printing. (by default True)
+
+sleep(1) # wating 1 second
+
+bar.add_and_render(to_add=10, cls=True) # add 10 the the progress bar and then render it
+```
+
+### Advanced use
+You can set use some variables to track the current progression of the `progress bar`
