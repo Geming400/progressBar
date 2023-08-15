@@ -21,7 +21,6 @@ class progress_bar():
         self.symbols = symbols
         self.text = text
 
-        # Normally, will work without this checking, but we need extra check :D
 
 
     def render(self, doPrint=True):
