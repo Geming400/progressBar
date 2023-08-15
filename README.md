@@ -1,5 +1,3 @@
-*(If this is not working till 24/08/2023, it's because I'm in my holiday and that I am lazy to test it with the little changes that I made)*
-
 # progress Bar
 `progressBar` is an open-source python module to help you making progress bar easily! *(not in python `PIP`)*
 
