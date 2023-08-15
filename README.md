@@ -17,21 +17,21 @@ symbols: The symbols that are rendered for showing the current progress bar stat
 text: The text that will be rendered above the progress bar
 '''
 ```
+This is the help about the progress bar arguments.
 
 ### starting off
-This is the help about the progress bar arguments.\
-**next**, you need to import and create an object.
+**First** you need to import and create an object.
 ```py
 import progressBar  # importing the module
 
 bar = progress_bar()  # creating the "bar" object
 ```
-Doing this will create an object named `bar`, but this is not enough.
-I want to:
+Doing this will create an object named `bar`, but this is not enough.\
+But imagine I want to:
 - display 15 characters to render the **progress bar**
-- have a **progress bar** looking like this: `|||::::`
+- have a **progress bar** looking like this: `|||||:::::::::::::`
 
-The code for it would be:
+The code for this would be:
 ```py
 import progressBar  # importing the module
 
