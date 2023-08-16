@@ -54,7 +54,7 @@ Pbar.render(doPrint=True) # render the bar. You can set the "doPrint" argument t
 
 ### adding a value to the object
 A **progress bar** needs to move! Imagine the life of it without moving... `emotional story, I know :(`\
-There is 3 fonction to do it:
+There is 3 function to do it:
 ```py
 add(to_add=10, cls=True)
 ```
@@ -82,6 +82,14 @@ Pbar.add_and_render(to_add=10, cls=True) # add 10 (out of max_value (default: 10
 
 ### Advanced use
 You can set use some variables to track the current progression of the `progress bar`
+Here is the list:
+- self.max_step = max_value ***(`max_value` is the function argument)***
+- self.current = current_value
+- self.bars_max = bars_max
+- self.symbols = symbols
+- self.text = text
+  
+*(Replace `self` by your python **object**!)*
 
 ## What is currently supported
 *Current version: **1.0.0***
