@@ -31,7 +31,7 @@ class progress_bar():
         self.renderResult = ""
         #print(self.currentR)
         if self.current > self.max_step:
-            print("You can't have the current value being more than " + self.max_step)
+            print("You can't have the current value being more than " + str(self.max_step))
             exit(IndexError)
         else:
             for x in range(0, self.barsToRender): # A loop to count how many bars are full
