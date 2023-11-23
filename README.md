@@ -2,7 +2,7 @@
 `progressBar` is an open-source python module to help you making progress bar easily! *(not in python `PIP`)*
 
 ## **LICENSE**
-This **repo** is under the [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/#) license, you can do mostly anything with [it](https://github.com/Geming400/progressBar).
+This **repo** is under the [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/#) license, you can do mostly anything with it.
 
 ## Some definitions
 `cls`: **CL**ear **S**creen
