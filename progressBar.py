@@ -13,13 +13,16 @@ def clear_screen():
 
 # Creating the class
 class progress_bar():
-    def __init__(self, current_value=0, max_value=100, bars_max=10, symbols:list = ["|", "-"], text="progressBar text"): # MIN_VALUE = 0 (not modifiable)
+    def __init__(self, current_value=0, max_value=100, bars_max=10, symbols:list = ["|", "-"], text="progressBar text", suffix=None, prefix=None):
         #self.min = min_value
         self.max_step = max_value # The maximal number of step to display all of the progress bar
         self.current = current_value # The current step number of where the progress of your execution is 
         self.bars_max = bars_max # The maximum number of bars (characters) to display
         self.symbols = symbols
         self.text = text
+
+        self.suffix = suffix
+        self.prefix = prefix
 
 
 
@@ -28,28 +31,34 @@ class progress_bar():
         # currentR, R = Round (Will be rounded, but only below + don't care >:) )
         self.currentR = self.current / self.max_step
         self.barsToRender = int(self.currentR * self.bars_max)
-        self.renderResult = ""
+        renderResult = ""
         #print(self.currentR)
+        if not self.suffix == None:
+            renderResult = self.suffix + " "
+        
         if self.current > self.max_step:
             print("You can't have the current value being more than " + str(self.max_step))
             exit(IndexError)
         else:
             for x in range(0, self.barsToRender): # A loop to count how many bars are full
-                self.renderResult = self.renderResult + self.symbols[0]
+                renderResult = renderResult + self.symbols[0]
 
             for x in range(0, self.bars_max - self.barsToRender): # A loop to count how many bars are empty
-                self.renderResult = self.renderResult + self.symbols[1]
+                renderResult = renderResult + self.symbols[1]
 
+            if not self.prefix == None:
+                renderResult = " " + self.prefix
+            
             if doPrint == False: # Check if it will print the bar or simply return it.
                 if self.text == "": # If there is no given text, then it will not return the text at all
-                    return self.renderResult
+                    return renderResult
                 else:
-                    return self.text + "\n" + self.renderResult
+                    return self.text + "\n" + renderResult
             else:
                 if self.text == "": # If there is no given text, then it will not print the text at all
-                    print(self.renderResult)
+                    print(renderResult)
                 else:
-                    print(self.text + '\n' + self.renderResult)
+                    print(self.text + '\n' + renderResult)
                     #print(str(self.current) + '\n' + self.renderResult)
 
 
