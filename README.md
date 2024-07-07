@@ -25,7 +25,7 @@ This is the help about the progress bar arguments.
 ### starting off
 **First** you need to import and create an object.
 ```py
-import progressBar  # importing the module
+from progressBar import progress_bar # importing the module
 
 bar = progress_bar()  # creating the "bar" object
 ```
@@ -36,7 +36,7 @@ But imagine I want to:
 
 The code for this would be:
 ```py
-import progressBar  # importing the module
+from progressBar import progress_bar # importing the module
 
 Pbar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
 ```
@@ -46,7 +46,7 @@ Pbar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" objec
 **Rendering** is as simple as executing a function!\
 Once you have your object, *(in this case, `bar`)* you just execute that piece of code:
 ```py
-import progressBar  # importing the module
+from progressBar import progress_bar # importing the module
 
 Pbar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
 Pbar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to False to prevent the printing. (by default True)
@@ -70,7 +70,7 @@ add_and_render(to_add=10, cls=True)
 Here is an example:
 ```py
 from time import sleep  # importing the modules
-import progressBar
+from progressBar import progress_bar
 
 Pbar = progress_bar(bars_max=17, symbols=["|", ":"])  # creating the "bar" object
 Pbar.render(doPrint=True) # render the bar. You can set the "doPrint" argument to False to prevent the printing. (by default True)
